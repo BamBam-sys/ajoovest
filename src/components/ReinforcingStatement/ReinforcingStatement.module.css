@@ -1,0 +1,23 @@
+.statement {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background: var(--primary-color);
+  border-radius: 12px;
+}
+
+.statementImg img {
+  width: 37rem;
+  border-radius: 12px;
+}
+
+.statementDescription {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+  max-width: 50rem;
+}

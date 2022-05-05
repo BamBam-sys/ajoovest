@@ -1,0 +1,51 @@
+.hero {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
+  align-items: center;
+}
+
+.primaryHeading {
+  margin-bottom: 2.4rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+}
+
+.heroDescription {
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.heroBtn {
+  margin-bottom: 4.2rem;
+}
+
+.downloadLinks {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.downloadLinks svg {
+  transition: all ease-in-out 400ms;
+}
+
+.downloadLinks svg:hover {
+  transform: scale(1.06);
+}
+
+.heroImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImg img {
+  width: 100%;
+  transform: rotate(-20deg) translateY(-30px);
+}

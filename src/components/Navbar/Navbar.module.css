@@ -1,0 +1,45 @@
+.navbar {
+  background: var(--bg-color);
+  padding: 2.8rem 4.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brandLogo {
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink:link,
+.navLink:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--secondary-text-color);
+  transition: all 400ms ease;
+}
+
+.navLink:hover,
+.navLink:active {
+  color: var(--secondary-color);
+}
+
+.navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

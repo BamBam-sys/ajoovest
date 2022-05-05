@@ -1,0 +1,22 @@
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+  margin-top: 5rem;
+}
+
+.step svg {
+  width: 4.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.stepDescription {
+  margin-top: 1.7rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.stepDescription a {
+  color: var(--primaryText-color);
+}

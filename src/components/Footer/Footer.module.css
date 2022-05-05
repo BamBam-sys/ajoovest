@@ -1,0 +1,58 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.brand {
+  color: var(--secondary-text-color);
+  text-transform: capitalize;
+  font-family: 'Pacifico', cursive;
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.products,
+.company,
+.legal,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+.link:hover,
+.link:active {
+  color: var(--secondary-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.socials a ion-icon {
+  color: var(--primary-color);
+  font-size: 3.1rem;
+}
+
+.socials a ion-icon:hover {
+  transform: translateY(-2px);
+}
+
+.contact {
+  text-align: right;
+}

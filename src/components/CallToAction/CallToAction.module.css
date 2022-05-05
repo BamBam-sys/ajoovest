@@ -1,0 +1,29 @@
+.cta {
+  background: #19221c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 11px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ctaText {
+  padding: 5rem;
+}
+
+.cta p {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin-top: 3rem;
+}
+
+.ctaBtns {
+  margin-top: 3.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.ctaImg img {
+  width: 60rem;
+}
