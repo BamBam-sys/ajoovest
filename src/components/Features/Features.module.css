@@ -18,10 +18,10 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 10rem auto 0;
 }
-
+/* 
 .featureText {
-  /* margin-top: 5rem; */
-}
+  margin-top: 5rem;
+} */
 
 .featureText p {
   font-size: 1.8rem;

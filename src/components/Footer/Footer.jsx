@@ -6,7 +6,9 @@ function Footer() {
   return (
     <div className="container">
       <div className={styles.footer}>
-        <div className={styles.brand}>ajooVest</div>
+        <Link to={'/'} className={styles.brand}>
+          ajooVest
+        </Link>
         <div className={styles.products}>
           <h3>products</h3>
           <Link to={'/'} className={styles.link}>
@@ -77,6 +79,9 @@ function Footer() {
             +234 816 837 1973
           </a>
         </div>
+      </div>
+      <div className={styles.copy}>
+        All rights Reserved. © 2022 Ajoovest Inc.
       </div>
     </div>
   );
