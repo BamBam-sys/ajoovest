@@ -16,7 +16,6 @@ function HomePage() {
         <Hero />
       </section>
       <section className={styles.statement}>
-        <span className={styles.brand}>ajooVest</span>
         <ReinforcingStatement />
       </section>
       <section className={styles.howItWorks}>

@@ -1,8 +1,12 @@
 .navbar {
+  width: 100%;
   background: var(--bg-color);
-  padding: 2.8rem 4.8rem;
+  padding: 0 4.8rem;
+  height: 9.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .brandLogo {
@@ -12,6 +16,13 @@
   font-family: 'Pacifico', cursive;
   font-size: 3.9rem;
   font-weight: 600;
+}
+
+.mainNav {
+  /* flex-basis: 70%; */
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .navLinks {
@@ -41,5 +52,78 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.mobileNavBtn {
+  display: none;
+}
+
+.mobileNavBtn ion-icon[name='menu-outline'],
+.mobileNavBtn ion-icon[name='close-outline'] {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/**************************/
+/* media queries */
+/**************************/
+
+/* BL 1200px */
+@media (max-width: 75em) {
+  .navbar {
+    padding: 0 3.2rem;
+  }
+}
+
+/* BL 944px */
+@media (max-width: 59em) {
+  /* mobile navigation */
+  .mobileNavBtn {
+    display: block;
+    z-index: 2;
+  }
+
+  .mainNav {
+    background-color: rgba(221, 227, 223, 0.922);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+
+  .openNav .mainNav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .navLink:link,
+  .navLink:visited {
+    font-size: 3rem;
+  }
+
+  .navBtn {
+    flex-direction: column;
+  }
 }

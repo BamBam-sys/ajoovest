@@ -6,9 +6,23 @@ function Footer() {
   return (
     <div className="container">
       <div className={styles.footer}>
-        <Link to={'/'} className={styles.brand}>
-          ajooVest
-        </Link>
+        <div className={styles.column1}>
+          <Link to={'/'} className={styles.brand}>
+            ajooVest
+          </Link>
+          <div className={styles.socials}>
+            <a href={'/'}>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href={'/'}>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href={'/'}>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+
         <div className={styles.products}>
           <h3>products</h3>
           <Link to={'/'} className={styles.link}>
@@ -55,17 +69,7 @@ function Footer() {
         </div>
 
         <div className={styles.contact}>
-          <div className={styles.socials}>
-            <a href={'/'}>
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href={'/'}>
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href={'/'}>
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
+          <h3>contact us</h3>
           <a
             href="https://goo.gl/maps/qcdeAVPL3EM5wAMN9"
             className={styles.link}
@@ -79,6 +83,15 @@ function Footer() {
             +234 816 837 1973
           </a>
         </div>
+      </div>
+      <div className={styles.subscribe}>
+        <p>Subscribe to our newsletter</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+        />
       </div>
       <div className={styles.copy}>
         All rights Reserved. © 2022 Ajoovest Inc.

@@ -1,11 +1,15 @@
 .cta {
-  background: #303833;
+  background-image: linear-gradient(90deg, #3b5041, rgba(59, 80, 65, 0.37)),
+    url('../../assets/money_jar3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-radius: 11px;
-  padding: 0;
-  overflow: hidden;
+  height: 50rem;
+  padding: 5rem;
 }
 
 .ctaText {
@@ -22,8 +26,4 @@
   margin-top: 3.5rem;
   display: flex;
   gap: 1.5rem;
-}
-
-.ctaImg img {
-  width: 60rem;
 }

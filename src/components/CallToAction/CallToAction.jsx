@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './CallToAction.module.css';
 import { SecondaryHeading } from '../../common';
-import jar from '../../assets/money_jar.jpg';
 
 function CallToAction() {
   return (
-    <div className={`${styles.cta} container`}>
+    <div className={`${styles.cta}`}>
       <div className={styles.ctaText}>
         <SecondaryHeading
           text={'Join The AjooVest Family Today!'}
@@ -282,9 +281,7 @@ function CallToAction() {
           </a>
         </div>
       </div>
-      <div className={styles.ctaImg}>
-        <img src={jar} alt="jar containing coins" />
-      </div>
+      <div className={styles.ctaImg}></div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .steps {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3.5rem;
   margin-top: 5rem;
 }
@@ -19,4 +19,22 @@
 
 .stepDescription a {
   color: var(--primaryText-color);
+}
+
+/**************************/
+/* media queries */
+/**************************/
+
+/* BL 944px */
+@media (max-width: 59em) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* BL 769px */
+@media (max-width: 48em) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
 }
