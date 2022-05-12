@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   line-height: 1.5;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .brand:link,
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.3rem;
+  /* padding: 1.3rem; */
 }
 
 .footer h3 {
@@ -89,8 +89,9 @@
   margin-top: 5rem;
 }
 
-.subscribe p {
-  font-size: 1.6rem;
+.subscribe p,
+.column1 p {
+  font-size: 1.5rem;
 }
 
 .subscribe input {

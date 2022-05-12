@@ -10,6 +10,7 @@ function Footer() {
           <Link to={'/'} className={styles.brand}>
             ajooVest
           </Link>
+          <p>Building an all inclusive digital economy for Africa and beyond</p>
           <div className={styles.socials}>
             <a href={'/'}>
               <ion-icon name="logo-twitter"></ion-icon>
