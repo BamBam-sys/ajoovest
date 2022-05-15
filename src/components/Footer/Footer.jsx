@@ -86,7 +86,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.subscribe}>
-        <p>Subscribe to our newsletter</p>
+        <p>Subscribe to our newsletter!</p>
         <input
           type="email"
           name="email"

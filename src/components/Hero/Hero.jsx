@@ -6,7 +6,7 @@ import heroImg from '../../assets/cash-removebg.png';
 
 function Hero() {
   return (
-    <div className={styles.hero}>
+    <div className={`${styles.hero}`}>
       <div className={styles.heroText}>
         <h1 className={styles.primaryHeading}>a better way to do ajoo</h1>
         <p className={styles.heroDescription}>

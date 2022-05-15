@@ -3,6 +3,10 @@
   padding: 15.5rem 0;
 }
 
+.sticky .hero {
+  background: red;
+}
+
 .statement {
   padding: 10.8rem 12.2rem;
 }
