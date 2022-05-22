@@ -72,10 +72,6 @@
   color: var(--primary-color);
 }
 
-.contact {
-  /* text-align: right; */
-}
-
 .copy {
   font-size: 1.5rem;
   color: var(--primary-text-color);

@@ -2,21 +2,18 @@
   width: 100%;
   padding: 0 4.8rem;
   height: 9.6rem;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nonSticky.navbar {
-  position: relative;
-  background: var(--bg-color);
+  transition: all ease-in 200ms;
 }
 
 .sticky.navbar {
   position: fixed;
   top: 0;
   background-color: #fcfcfc;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
   z-index: 3;
 }
 

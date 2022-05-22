@@ -27,3 +27,14 @@
   display: flex;
   gap: 1.5rem;
 }
+
+/**************************/
+/* media queries */
+/**************************/
+
+/* BL 544px */
+@media (max-width: 34em) {
+  .ctaText {
+    padding: 0;
+  }
+}
