@@ -35,16 +35,17 @@ function Features() {
             <a href="/">Learn more</a>
           </div>
         </Fade>
-
-        <div className={styles.featureText}>
-          <TertiaryHeading text={'Target savings and group savings'} />
-          <p>
-            We bring you into a world where there are endless possibilities and
-            opportunities Save for specific financial targets Save with your
-            friends, family, groups, etc.
-          </p>
-          <a href="/">Learn more</a>
-        </div>
+        <Fade left cascade>
+          <div className={styles.featureText}>
+            <TertiaryHeading text={'Target savings and group savings'} />
+            <p>
+              We bring you into a world where there are endless possibilities
+              and opportunities Save for specific financial targets Save with
+              your friends, family, groups, etc.
+            </p>
+            <a href="/">Learn more</a>
+          </div>
+        </Fade>
         <div className={styles.featureImg}>
           <img src={iphone} alt="iphone 12" />
         </div>
