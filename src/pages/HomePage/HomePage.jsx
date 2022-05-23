@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   CallToAction,
   Features,
@@ -9,10 +9,16 @@ import {
 } from '../../components';
 import styles from './HomePage.module.css';
 
+import { appContext } from '../../context';
+
 function HomePage() {
+  const { useObserver } = useContext(appContext);
+
+  const [ref] = useObserver();
+  //{ rootMargin: '-50px' }
   return (
     <main>
-      <section className={styles.hero}>
+      <section ref={ref} className={styles.hero}>
         <Hero />
       </section>
       <section className={styles.statement}>

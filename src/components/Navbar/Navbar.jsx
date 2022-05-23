@@ -17,7 +17,7 @@ function Navbar() {
   }, [mobileNavOpen]);
 
   const mobileNavStyles = mobileNavOpen ? styles.openNav : '';
-  const stickyStyles = isVisible ? '' : styles.sticky;
+  const stickyStyles = isVisible ? null : styles.sticky;
 
   return (
     <>
